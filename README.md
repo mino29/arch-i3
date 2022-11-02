@@ -31,7 +31,7 @@ around, I might eventually switch to hyprland, the animations are just too good)
 
 ## screenshots
 
-[ ] will upload asap
+- will upload asap
 
 ## clash-for-windows setup
 
@@ -43,11 +43,11 @@ around, I might eventually switch to hyprland, the animations are just too good)
 
 ## default programs
 
-vim -> .md, .txt
-zathura -> .pdf
-foliate -> .epub
-ebook viewer -> .mobi
-haruna -> .mp4, .ts, .mov
+*vim -> .md, .txt
+*zathura -> .pdf
+*foliate -> .epub
+*ebook viewer -> .mobi
+*haruna -> .mp4, .ts, .mov
 
 ## some processes
 
@@ -71,8 +71,8 @@ countdown 10m
 places where you have to set font
 
 terminal:
-    - kitty (~/.config/kitty/kitty.conf)
-    - urxvt (~/.Xresources)
+    *kitty (~/.config/kitty/kitty.conf)
+    *urxvt (~/.Xresources)
 gui widgets: lxappearance
 status bar: polybar
 code editor: vscode/ vscodium
