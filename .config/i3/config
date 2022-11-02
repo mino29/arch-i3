@@ -1,0 +1,331 @@
+# Set mod variable to super key
+set $mod Mod4
+
+# Set common Scripts to vars
+set $rofi ~/Scripts/rofi/launch.sh
+set $music ~/Scripts/music/mpv-controller.sh
+set $light ~/Scripts/misc/backlight.sh
+#set $volume /usr/bin/pulseaudio-ctl
+set $volume ~/Scripts/misc/volume.sh
+
+# Set vim movement to vars
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Set commonly used programs to vars
+set $terminal urxvt
+set $filemanager nautilus
+set $music spotify
+set $video haruna
+set $calc qalculate-gtk
+set $browser google-chrome-stable
+
+# Set workspace vars
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws0 "10"
+
+# Set colors
+
+
+# autotiling/dynamic tiling
+exec_always --no-startup-id autotiling -l 2
+
+# remap capslock to esc
+exec_always setxkbmap -option caps:escape
+
+# reconfigure touchpad
+exec_always ~/Scripts/touchpad/synaptics-custom-settings.sh
+
+# Startup chinese input
+exec_always --no-startup-id fcitx5
+# Startup network/wifi widget
+exec_always --no-startup-id nm-applet --indicator
+
+# Startup audio
+#exec_always --no-startup-id pasystray &
+
+# Startup clash-for-windows
+exec_always --no-startup-id cfw
+
+# Startup aria2/motrix
+exec_always --no-startup-id motrix
+
+# bluetooth
+exec_always --no-startup-id blueman-applet
+
+# Start notification daemon
+# Startup daemons for compositor and status bar
+exec_always --no-startup-id pkill picom; picom --no-use-damage
+exec_always --no-startup-id pkill dunst; dunst
+
+# Use URxvt settings from Xresources
+exec_always --no-startup-id xrdb ~/.Xresources
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+exec_always --no-startup-id rm ~/Scripts/misc/backlight-lockfile
+exec_always --no-startup-id rm ~/Scripts/misc/volume-lockfile
+exec --no-startup-id xset r rate 250 20
+
+#bindsym $mod+Shift+k exec eww -c ~/.config/eww/mpc open --toggle mpc
+
+#bindsym $mod+d [class="discord"] scratchpad show
+#exec_always --no-startup-id discord
+#for_window [class="discord"] move to scratchpad; move position center
+
+# Turn borders [0:off,>1:on]
+#for_window [class="^.*"] border pixel 1
+for_window [all] border pixel 1
+
+# i3-gaps-rounded config
+# border_radius 15
+
+# Change gap size
+gaps outer 5
+gaps inner 24
+#gaps left 220
+gaps top 63
+
+# Drag floating windows
+floating_modifier $mod
+
+# Start a default terminal emulator instance
+bindsym $mod+Return exec $terminal
+
+# Start a google-chrome instance
+bindsym $mod+b exec $browser
+
+# Start a pcmanfm/file browser instance
+bindsym $mod+e exec $filemanager
+
+# Kill focused window
+bindsym $mod+q kill
+
+# Start rofi with appmenu and tabmenu
+bindsym $mod+d exec $rofi appmenu
+bindsym $mod+space exec $rofi appmenu
+#bindsym $mod+Tab exec $rofi tabmenu
+#bindsym $mod+Shift+e exec $rofi powermenu
+
+# Enable keybindings for notifications
+#bindsym --release Control+space exec dunstctl close
+bindsym --release Control+Shift+space exec dunstctl close-all
+#bindsym --release Control+grave exec dunstctl history-pop
+
+
+# Set up screenshots and partial screenshots
+bindsym --release Print exec maim -u ~/Pictures/screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
+bindsym --release Shift+Print exec maim -u -s ~/Pictures/screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
+
+# Bind audio keys to pactl volume control
+bindsym XF86AudioRaiseVolume        exec $volume inc 10
+bindsym XF86AudioLowerVolume        exec $volume dec 10
+bindsym XF86AudioMute               exec $volume mute
+bindsym Shift+XF86AudioRaiseVolume  exec $volume inc
+bindsym Shift+XF86AudioLowerVolume  exec $volume dec
+bindsym Shift+XF86AudioMute         exec $volume mute
+
+
+#bindsym XF86AudioRaiseVolume        exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+#bindsym XF86AudioLowerVolume        exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+#bindsym XF86AudioMute               exec $volume mute
+
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+
+# Bind brightness keys to light interface
+#bindsym $mod+x                             exec $light inc 15
+#bindsym $mod+z                             exec $light dec 15
+#bindsym $mod+Shift+x                       exec $light inc 5
+#bindsym $mod+Shift+z                       exec $light dec 5
+
+bindsym XF86MonBrightnessUp           exec $light inc 15
+bindsym XF86MonBrightnessDown         exec $light dec 15
+bindsym Shift+XF86MonBrightnessUp     exec $light inc 5
+bindsym Shift+XF86MonBrightnessDown   exec $light dec 5
+
+# Start the shutdown menu on left top button (like the power button)
+bindcode 248 exec qtshutdownmenu
+bindsym XF86PowerOff exec qtshutdownmenu
+bindsym $mod+Shift+Escape exec qtshutdownmenu
+
+# Move focus with the arrow keys
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move focus with the vim keys
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+# Move windows with shift + arrow keys
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+# Split in specified direction
+bindsym $mod+z split h
+bindsym $mod+x split v
+
+# Enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
+
+# Change container layout (using autotiling, this is unnecessary)
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+o layout toggle split
+
+# Toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# Change focus between tiling / floating windows
+bindsym $mod+Control+space focus mode_toggle
+
+# Bind keys to switch to next workspace
+bindsym $mod+bracketright workspace next
+bindsym $mod+bracketleft workspace prev
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
+# Switch to workspace
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+
+# Reload the configuration file
+bindsym $mod+Shift+t reload
+
+# Restart i3 inplace
+bindsym $mod+Shift+r restart
+
+# Add resize keybindings in place of mode
+bindsym $mod+Control+Left resize shrink width 40 px
+bindsym $mod+Control+Down resize grow height 40 px
+bindsym $mod+Control+Up resize shrink height 40 px
+bindsym $mod+Control+Right resize grow width 40 px
+bindsym $mod+Shift+Control+Left resize shrink width 1 px or 1
+bindsym $mod+Shift+Control+Down resize grow height 1 px or 1
+bindsym $mod+Shift+Control+Up resize shrink height 1 px or 1
+bindsym $mod+Shift+Control+Right resize grow width 1 px or 1
+
+# mpv music controller bindings
+#bindsym $mod+Shift+P exec $music pause
+#bindsym $mod+Shift+bracketleft exec $music prev
+#bindsym $mod+Shift+bracketright exec $music next
+#bindsym $mod+Shift+semicolon exec $music seek -10
+#bindsym $mod+Shift+apostrophe exec $music seek 10
+#bindsym $mod+Shift+comma exec $music seek-percent -5
+#bindsym $mod+Shift+period exec $music seek-percent 5
+#bindsym $mod+Shift+m exec $rofi filebrowser ~/music
+#bindsym $mod+Shift+n exec $rofi filebrowser ~/docs/media
+#bindsym $mod+Shift+l exec $music stop
+#bindsym $mod+Shift+o exec $music notif
+#bindsym $mod+Shift+minus exec $music vol -10
+#bindsym $mod+Shift+equal exec $music vol 10
+
+# scratchpad
+#bindsym $mod+minus exec scratchpad show
+
+# Always float certain windows
+for_window [class="mpv"] floating enable
+for_window [class="Pavucontrol"] floating enable
+for_window [class="Blueberry.py"] floating enable
+for_window [class="htevis"] floating enable
+for_window [class="sim"] floating enable
+for_window [class="Matplotlib"] floating enable
+for_window [class="plank"] floating enable
+
+# Assign applications on specifi workspaces
+#assign [class="(K|k)itty"] workspace number 1
+
+assign [class="Codium"] workspace number $ws1
+assign [class="(C|c)ode"] workspace number $ws1
+
+assign [class="Google-chrome"] workspace number $ws2
+assign [class="firefox"] workspace number $ws2
+
+assign [class="(S|s)team"] workspace number $ws3
+assign [class="Clash for Windows"] workspace number $ws6
+
+#assign [class="(P|p)(C|c)(M|m)an(F|f)(M|m)"] workspace number $ws8
+#assign [class="Org.gnome.Nautilus"] workspace number $ws8
+
+assign [class="(M|m)otrix"] workspace number $ws5
+assign [class="Free Download Manager"] workspace number $ws5
+
+assign [class="obsidian"] workspace number $ws7
+assign [class="(C|c)om.github.johnfactotum.Foliate"] workspace number $ws7
+
+assign [class="Spotify"] workspace number $ws8
+
+assign [class="feh"] workspace number $ws9
+assign [class="Gimp"] workspace number $ws9
+
+assign [class="haruna"] workspace number $ws0
+
+
+# Make sure fonts are loaded right
+exec_always xset +fp ~/.fonts/
+exec_always xset fp rehash
+
+# Run startup wallpaper
+exec_always bash -c "feh --bg-fill $(cat ~/Scripts/misc/default-bg.txt | head -n 1 | tr -d '\n')"
+
+# Allow Scripts to interface with dbus
+exec_always --no-startup-id ~/Scripts/misc/xdbus.sh
+
+
+#bindsym $mod+c scratchpad show
+#bindsym $mod+Shift+c move to scratchpad; move position center
+
+
+# Others
+for_window [class=".*copyq.*"] floating enable resize set 768 600,move position center
+for_window [class="Org.gnome.NautilusPreviewer"] floating enable resize set 768 600,move position center
+for_window [class="Gpick"] floating enable
+for_window [class="GoldenDict"] floating enable
+for_window [class="Lxappearance"] floating enable
+for_window [class="Nitrogen"] floating enable
+#for_window [class="Spotify"] floating enable
+for_window [class="Zeal"] floating enable
+#for_window [class="feh"] floating enable
+for_window [class="qt5ct"] floating enable
+for_window [title="(?!)GIMP Startup"] border 0

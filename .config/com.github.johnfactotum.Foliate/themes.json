@@ -1,0 +1,12 @@
+{
+  "themes": [
+    {
+      "theme-name": "Tokyo Night",
+      "fg-color": "#d8dee9",
+      "bg-color": "rgb(26,27,38)",
+      "link-color": "rgb(92,148,224)",
+      "invert": false,
+      "dark-mode": true
+    }
+  ]
+}

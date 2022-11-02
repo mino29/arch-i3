@@ -31,7 +31,7 @@ around, I might eventually switch to hyprland, the animations are just too good)
 
 ## screenshots
 
-- will upload asap
+:- will upload asap
 
 ## clash-for-windows setup
 
@@ -43,7 +43,7 @@ around, I might eventually switch to hyprland, the animations are just too good)
 
 ## default programs
 
-*vim -> .md, .txt
+- vim -> .md, .txt
 *zathura -> .pdf
 *foliate -> .epub
 *ebook viewer -> .mobi
@@ -51,7 +51,8 @@ around, I might eventually switch to hyprland, the animations are just too good)
 
 ## some processes
 
-**cli countdown**
+**countdown-cli**
+a neat little count down tool
 
 ```
 export RELEASE="1.0.0"
@@ -61,9 +62,9 @@ sudo mv countdown /usr/local/bin
 ```
 
 ```
-usage example:
-countdown 5s
-countdown 10m
+usage:
+    countdown 5s
+    countdown 10m
 ```
 
 ## fonts
@@ -71,8 +72,8 @@ countdown 10m
 places where you have to set font
 
 terminal:
-    *kitty (~/.config/kitty/kitty.conf)
-    *urxvt (~/.Xresources)
+    *kitty (`~/.config/kitty/kitty.conf)
+    *urxvt (`~/.Xresources)
 gui widgets: lxappearance
 status bar: polybar
 code editor: vscode/ vscodium

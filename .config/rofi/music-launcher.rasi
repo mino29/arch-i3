@@ -1,0 +1,38 @@
+configuration {
+    modi: "window,run,drun";
+    show-icons: true;
+    font: "Hack Nerd Font 15";
+}
+
+@import "colors.rasi"
+@import "clean.rasi"
+
+
+#window {
+    padding: 186px 180px;
+}
+
+#listview {
+    columns: 5;
+    spacing: 20px;
+    cycle: false;
+    dynamic: true;
+    layout: vertical;
+    background-color: transparent;
+    // padding: 15px -10px -20px -10px;
+    // shadow: 2px 2px 2px black;
+}
+
+element {
+    margin: 0 0 0 0;
+    padding: 20 25 25 25; /**/
+    border-radius: 16px;
+    orientation: vertical;
+}
+
+element-icon {
+    size: 205px;
+    // background-color: blue;
+    padding: 20px;
+    border-radius: 20px;
+}

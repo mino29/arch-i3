@@ -1,0 +1,8 @@
+globinclude kitty.d/**/*.conf
+
+font_family      Source Code Pro
+bold_font        Source Code Pro Medium
+italic_font      Source Code Pro Italic
+bold_italic_font Source Code Pro Italic
+font_size 12.0
+

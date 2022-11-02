@@ -1,0 +1,215 @@
+{
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "explorer.confirmDragAndDrop": false,
+  "jupyter.interactiveWindowMode": "perFile",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "kite.showWelcomeNotificationOnStartup": false,
+  "tabnine.experimentalAutoImports": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {},
+  "editor.rulers": [80],
+  "security.workspace.trust.enabled": false,
+  "workbench.preferredLightColorTheme": "Tokyo Night",
+  "vim.visualstar": true,
+  "workbench.preferredHighContrastColorTheme": "Default Dark+",
+  "workbench.preferredDarkColorTheme": "Tokyo Night",
+  "workbench.colorCustomizations": {
+    // "editorRuler.foreground": "#616161",
+    // "statusBar.background": "#a3bd8c",
+    // "statusBar.noFolderBackground": "#a3bd8c",
+    // "statusBar.debuggingBackground": "#a3bd8c",
+    // "statusBar.foreground": "#3b4252",
+    // "statusBar.debuggingForeground": "#3b4252"
+  },
+  "editor.formatOnSave": true,
+  "vscode-edge-devtools.mirrorEdits": true,
+  "editor.cursorBlinking": "solid",
+  "python.terminal.executeInFileDir": true,
+  "terminal.integrated.defaultProfile.windows": "Powershell 7 Preview",
+  "explorer.confirmDelete": false,
+  "python.defaultInterpreterPath": "/usr/bin/python",
+  "python.formatting.provider": "black",
+  "bracketPairColorizer.depreciation-notice": false,
+  "workbench.startupEditor": "none",
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "vsicons.dontShowNewVersionMessage": true,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "powershell.powerShellDefaultVersion": "Windows PowerShell (x86)",
+  "redhat.telemetry.enabled": true,
+  //vim related settings
+  "vim.easymotion": true,
+  "vim.leader": " ",
+  "keyboard.dispatch": "keyCode",
+  "vim.searchHighlightColor": "#E06C75",
+  "vim.hlsearch": true,
+  "vim.ignorecase": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["H"], "after": ["g", "T"] },
+    { "before": ["L"], "after": ["g", "t"] },
+    //press zero to go to the first non-white-space character
+    { "before": ["0"], "after": ["^"] },
+    { "before": [";"], "after": [":"] }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["leader", "h"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": [
+        "workbench.action.files.saveAll",
+        "workbench.action.closeWindow",
+        "workbench.action.quit"
+      ]
+    },
+    {
+      "before": ["leader", "c"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["leader", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["revealInExplorer"]
+    },
+    {
+      "before": ["<leader>", "r", "f"],
+      "commands": ["fileutils.renameFile"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    { "before": [";"], "after": [":"] },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  //vim airline emulation
+  //tokyo-night theme
+  //   "vim.statusBarColorControl": true,
+  //   "vim.statusBarColors.normal": ["#3b4252", "#e5e9f0"],
+  //   "vim.statusBarColors.insert": ["#a3be8c", "#3b4252"],
+  //   "vim.statusBarColors.visual": ["#a3bd8c", "#3b4252"],
+  //   "vim.statusBarColors.visualline": ["#a3bd8c", "#3b4252"],
+  //   "vim.statusBarColors.visualblock": ["#a3bd8c", "#3b4252"],
+  //   "vim.statusBarColors.replace": ["#a3bd8c", "#3b4252"],
+  //   "vim.statusBarColors.commandlineinprogress": ["#3b4252", "#e5e9f0"],
+  //   "vim.statusBarColors.searchinprogressmode": ["#3b4252", "#e5e9f0"],
+  //   "vim.statusBarColors.easymotionmode": ["#3b4252", "#e5e9f0"],
+  //   "vim.statusBarColors.easymotioninputmode": ["#3b4252", "#e5e9f0"],
+  //   "vim.statusBarColors.surroundinputmode": ["#3b4252", "#e5e9f0"],
+  //auto switch with im-select
+  "editor.lineNumbers": "relative",
+  "files.autoSave": "onFocusChange",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.renderWhitespace": "all",
+  "editor.detectIndentation": false,
+  "vim.useSystemClipboard": true,
+  "showMusicMetrics": false,
+  "showGitMetrics": false,
+  "showWeeklyRanking": false,
+  "git.autofetch": true,
+  //built-in terminal shells
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "sml": "cd $dir && sml $fileName"
+  },
+  "editor.fontFamily": "Hack Nerd Font",
+  "workbench.colorTheme": "Tokyo Night",
+  "editor.fontSize": 14,
+  "scm.inputFontSize": 14,
+  "debug.console.fontSize": 14,
+  "markdown.preview.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "editor.formatOnType": true,
+  "debug.console.fontFamily": "hack nerd font",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.iconTheme": "vscode-icons"
+}

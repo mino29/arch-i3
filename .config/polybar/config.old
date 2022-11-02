@@ -1,0 +1,370 @@
+[colors]
+background = #1a1b26
+foreground = #e3eaf3
+primary = #d295f6
+secondary = #5c94e0
+tertiary = #d07ef2
+fourth = #ec7377
+fifth = #d2595d
+sixth = #89d077
+seventh = #4c4c4e
+eighth = #3a456b
+
+alert = #ed404c
+
+
+[bar/main]
+enable-ipc = true
+width = 100%:-32
+offset-x = 16
+offset-y = 16
+
+height = 53
+radius = 0.0
+
+override-redirect = true
+wm-restack = i3
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+padding-left = 2
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = Hack Nerd Font:pixelsize=13:antialias=true;3
+font-1 = Hack Nerd Font:style=Regular:pixelsize=21:antialias=true;4.5
+font-2 = Hack Nerd Font:style=Regular:pixelsize=15:antialias=true;3
+
+modules-left = i3 spotify previous playpause next
+modules-center = xwindow
+modules-right = updates-pacman-aurhelper network date backlight audio battery powermenu
+
+
+tray-position = right
+tray-maxsize = 16
+;tray-background = ${colors.xbg2}
+tray-detached = false
+tray-transparent = false
+tray-padding = 2
+tray-scale = 1.0
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+
+[module/mpd]
+type = internal/mpd
+format-online =" <toggle> <icon-single> <icon-next>  "
+format-online-background = ${colors.seventh}
+icon-prev = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = 
+icon-repeat = 
+icon-single = ↻
+icon-random = 
+label-song-maxlen = 20
+label-song-ellipsis = true
+toggle-on-foreground = #ff
+toggle-off-foreground = #55
+
+[module/mpdvol]
+type = custom/script
+exec = mpc volume|cut -f2 -d":"
+exec-if = pgrep mpd
+click-left = mpc volume +5
+click-right = mpc volume -5
+interval = 3
+format-background = ${colors.xbg2}
+format-padding= ${variables.mpadding}
+
+label-song-maxlen = 25
+label-song-ellipsis = true
+
+
+[module/updates-pacman-aurhelper]
+type = custom/script
+exec = ~/Scripts/polybar/updates-pacman-aurhelper.sh
+interval = 300
+format-prefix = " "
+format = <label>
+format-foreground = ${colors.seventh}
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:20:...%
+label-foreground = ${colors.seventh}
+
+
+[module/filesystem]
+type = internal/fs
+interval = 25111
+mount-0 = /
+label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground}
+
+
+[module/i3]
+type = internal/i3
+pin-workspaces = false
+strip-wsnumbers = true
+index-sort = true
+enable-click = true
+enable-scroll = false
+wrapping-scroll = false
+reverse-scroll = false
+fuzzy-match = true
+
+ws-icon-default = "  "
+ws-icon-0 = "0;%{T3}%{T-}  "
+ws-icon-1 = "1;%{T2}%{T-}  "
+ws-icon-2 = "2;%{T2}%{T-}  "
+ws-icon-3 = "3;爵  "
+ws-icon-5 = "4;  "
+ws-icon-4 = "5;  "
+ws-icon-6 = "6;  "
+ws-icon-7 = "7;  "
+ws-icon-8 = "8;  "
+ws-icon-9 = "9;  "
+
+;ws-icon-9 = "9;  "
+
+format = <label-state>
+
+label-focused = %icon%
+label-focused-foreground = ${colors.secondary}
+label-focused-padding = 6px
+
+label-unfocused = ${self.label-focused}
+label-unfocused-foreground =  ${colors.seventh}
+label-unfocused-padding = ${self.label-focused-padding}
+
+label-visible = ${self.label-focused}
+label-visible-foreground = ${colors.seventh}
+label-visible-padding = ${self.label-focused-padding}
+
+label-urgent = ${self.label-focused}
+label-urgent-foreground = ${colors.alert}
+label-urgent-padding = ${self.label-focused-padding}
+
+;Media Player (needs rework)
+[module/mediaplayer]
+type = custom/script
+format = <label>
+format-padding = 2
+exec = ~/Scripts/polybar/player.sh
+exec-if = playerctl status
+interval = 0.5
+label-font = 3
+click-left = playerctl play-pause
+format-foreground = ${colors.seventh}
+
+[module/previous]
+type = custom/ipc
+; Default
+hook-0 = echo ""
+; When spotify active
+hook-1 = echo "玲"
+click-left = "spotifyctl -q previous"
+;format-foreground = ${colors.seventh}
+
+
+[module/next]
+type = custom/ipc
+; Default
+hook-0 = echo ""
+; When spotify active
+hook-1 = echo "怜"
+click-left = "spotifyctl -q next"
+;format-foreground = ${colors.seventh}
+
+
+[module/playpause]
+type = custom/ipc
+; Default (no symbol)
+hook-0 = echo ""
+; Playing (pause symbol)
+hook-1 = echo ""
+; Paused (play symbol)
+hook-2 = echo ""
+click-left = "spotifyctl -q playpause"
+;format-foreground = ${colors.seventh}
+
+
+[module/spotify]
+type = custom/ipc
+; Default
+hook-0 = echo ""
+; Playing/paused show song name and artist
+hook-1 = spotifyctl -q status --format '%artist%: %title%'
+;format-foreground = ${colors.seventh}
+
+;[module/spotify]
+;type = custom/script
+;interval = 1
+;format-prefix = " "
+;format = <label>
+;exec = python  ~/Scripts/polybar/spotify.py  -f '{play_pause} {song} - {artist} - {album}'
+;format-underline = ${colors.seventh}
+;format-foreground = ${colors.seventh}
+
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+enable-scroll = true
+;format =<ramp> <label>
+format =<ramp>
+interval = 2
+ramp-0 =""
+ramp-1 =""
+ramp-2 =""
+ramp-3 =""
+ramp-4 =""
+ramp-5 =""
+ramp-6 =""
+ramp-7 =""
+ramp-8 =""
+label = %percentage%%
+format-padding = ${variables.mpadding}
+format-foreground=${colors.seventh}
+format-background=${colors.xbg2}
+
+[module/network]
+type = internal/network
+interface = wlp0s20f3
+interval = 3.0
+label-connected = " %downspeed%  %upspeed%"
+label-disconnected =
+label-connected-foreground = ${colors.seventh}
+label-connected-background = ${colors.xbg2}
+click-left = kitty -e btop &
+
+[module/wlan]
+type = internal/network
+interface = wlp0s20f3
+interval = 3.0
+
+format-connected = <label-connected>
+format-connected-underline = #9f78e1
+label-connected = "直"
+label-connected-foreground = ${colors.secondary}
+
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${self.format-connected-underline}
+label-disconnected = 睊
+label-disconnected-foreground = ${colors.alert}
+
+; a = worst
+ramp-signal-0 = a
+ramp-signal-1 = b
+ramp-signal-2 = c
+ramp-signal-3 = d
+ramp-signal-4 = e
+
+
+[module/date]
+type = internal/date
+interval = 1
+
+date =
+date-alt = " %b %d, %Y  "
+time = " %I:%M"
+time-alt = "%H:%M:%S"
+
+format-prefix-foreground = ${colors.foreground}
+format-underline = #0a6cf5
+format-foreground = ${colors.seventh}
+label = %date%%time%
+
+
+[module/audio]
+type = internal/pulseaudio
+
+format-volume = <ramp-volume>
+label-volume-foreground = ${colors.seventh}
+ramp-volume-foreground = ${colors.seventh}
+label-volume =
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+label-muted = %{F#ff0000}ﱝ
+label-muted-foreground = ${colors.seventh}
+
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP0
+full-at = 98
+
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+format-full = <ramp-capacity> <label-full>
+
+;label-discharging = Discharging %percentage%%
+;format-discharging = <ramp-capacity> <label-discharging>
+
+label-charging = %percentage%%
+label-charging-foreground = ${colors.secondary}
+
+label-discharging = %percentage%%
+label-discharging-foreground = ${colors.seventh}
+
+label-full = %percentage%%
+label-full-foreground = ${colors.secondary}
+
+; if battery is too low, it turns red to alert
+
+ramp-capacity-0 = %{F#ff0000}
+ramp-capacity-1 = %{F#ff0000}
+ramp-capacity-2 = %{F#ff0000}
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = %{F#5c94e0}
+ramp-capacity-9 = %{F#5c94e0}
+ramp-capacity-10 = %{F#5c94e0}
+ramp-capacity-foreground = ${colors.seventh}
+
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-5 = 
+animation-charging-6 = 
+animation-charging-7 = 
+animation-charging-8 = 
+animation-charging-9 = 
+animation-charging-framerate = 750
+animation-charging-foreground = ${colors.secondary}
+
+
+[module/powermenu]
+type = custom/text
+format-spacing = 1
+content = 
+content-foreground = ${colors.secondary}
+;click-left = bash ~/Scripts/rofi/launch.sh powermenu
+click-left = qtshutdownmenu
+
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency =true
+
+[global/wm]
+margin-bottom = 20
