@@ -6,24 +6,24 @@ Hope you find theme useful in some way.
 
 ## Programs that I use
 
-OS: Arch Linux
-Machine: 2020 13.3" Razer Blade Stealth
-Terminal: Kitty/Urxvt
-Terminal Prompt: Powerlevel10k
-WM: i3
-Status bar: polybar
-fetch: neofetch/macchina
-launcher: rofi
-sys monitor: btop
-notification: dunst
-text editor: vim / lunarvim
-code editor: vs code/vscodium
-image viewer: feh
-music player: spotify
-video player: haruna
-browser: google-chrome-stable
-file manager: pcmanfm/nautilus
-colorscheme: tokyo-night
+- OS: Arch Linux
+- Machine: 2020 13.3" Razer Blade Stealth
+- Terminal: Kitty/Urxvt
+- Terminal Prompt: Powerlevel10k
+- WM: i3
+- Status bar: polybar
+- fetch: neofetch/macchina
+- launcher: rofi
+- sys monitor: btop
+- notification: dunst
+- text editor: vim / lunarvim
+- code editor: vs code/vscodium
+- image viewer: feh
+- music player: spotify
+- video player: haruna
+- browser: google-chrome-stable
+- file manager: pcmanfm/nautilus
+- colorscheme: tokyo-night
 
 I like simple and clean setup, so I got rid of fancy wallpaper transparency
 and blur all together so I can focus more on what I'm currently working or
@@ -90,17 +90,17 @@ I prefer:
 ## default programs
 
 - vim -> .md, .txt
-*zathura -> .pdf
-*foliate -> .epub
-*ebook viewer -> .mobi
-*haruna -> .mp4, .ts, .mov
+- zathura -> .pdf
+- foliate -> .epub
+- ebook viewer -> .mobi
+- haruna -> .mp4, .ts, .mov
 
 ## some processes
 
 **countdown-cli**
 a neat little count down tool
 
-```
+```bash
 export RELEASE="1.0.0"
 wget https://github.com/antonmedv/countdown/releases/download/v$RELEASE/countdown_linux_amd64 -O countdown
 chmod +x countdown
@@ -118,10 +118,47 @@ usage:
 places where you have to set font
 
 terminal:
-    *kitty (`~/.config/kitty/kitty.conf)
-    *urxvt (`~/.Xresources)
+    *kitty (`~/.config/kitty/kitty.conf)\
+    *urxvt (`~/.Xresources)\
 gui widgets: lxappearance
 status bar: polybar
 code editor: vscode/ vscodium
 browser: google-chrome humble-new-tab-page
 
+## colorscheme
+
+Primary: TokyoNight
+Secondary: Dracula
+Tertiary: Gruvbox
+
+Use to love Nord, then realise the low contrast is hurting, switch to
+TokyoNight. Wherever TokyoNight is unavailable I use Dracula. If neither are
+available I use Gruvbox.
+
+Making a colorscheme takes too much work and I'm too lazy for that.
+
+## text editor
+
+**vim**
+
+I forked a "minimal_vim", which is a cross platform, (neo)vim compatible,
+dependency free config that you can bascially use anywhere.
+
+It's simple, speedy and pretty good-looking. (uses gruvbox colorscheme)
+
+**lunarvim**
+
+It's the most beautiful and functional neovim distribution that I ever used.
+The maintainer Chris streams sometimes, I learned a lot from his neovim from
+scratch youtube series.
+
+**vscodium**
+
+Only gui text editor that I use, has similar keybinds to my minimal vim config.
+Nothing special.
+
+
+## credit
+[r/unixporn]()
+[Lunarvim]()
+[minimal vim]()

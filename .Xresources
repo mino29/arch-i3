@@ -1,0 +1,128 @@
+xterm*selectToClipboard: true
+xterm*disallowedWindowOps: 20,21,SetXProp
+!! URxvt Appearance
+/* URxvt.font: xft:JetBrainsMono Nerd Font:size=13 */
+! use more fonts to avoid issues
+URxvt.font:   xft:Hack Nerd Font Mono:regular:size=12, \
+              xft:WenQuanyi Micro Hei Mono:regular:size=12, \
+
+URxvt.letterSpace: -1
+URxvt.lineSpace: 0
+/*URxvt.geometry: 92x24 */
+URxvt.internalBorder: 10
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+URxvt.termName : rxvt-unicode-256color
+
+! 输出时不滚动
+URxvt*scrollTtyOutput: false
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+! 按键按下时回到最底部
+URxvt*scrollTtyKeypress: true
+
+! Disable ctrl + shift (insert picture mode)
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt.perl-ext-common:        default,matcher,resize-font,clipboard,resize-font,url-select,keyboard-select
+
+! Resize fonts
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+URxvt.keysym.C-question:  resize-font:show
+
+! Open url
+URxvt.url-select.launcher:    google-chrome-stable
+URxvt.url-select-underline:   true
+URxvt.colorUL:                #80d3f9
+
+URxvt.keysym.M-u:             perl:url-select:select_next
+URxvt.keysym.M-o:             perl:keyboard-select:activate
+
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+
+URxvt.keysym.Control-V: eval:paste_clipboard
+URxvt.keysym.Control-C: eval:selection_to_clipboard
+
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+
+URxvt.keysym.C-M-c: builtin-string:
+
+URxvt.perl-ext-common: default
+
+URxvt.clipboard.autocopy: true
+
+Xft.dpi: 96
+Xft.Hinting: 1
+Xft.RGBA: rgb
+Xft.HintStyle: hintslight
+Xft.Antialias: 1
+
+
+! color scheme
+!
+! special
+*.foreground:    #A9B1D6
+*.background:    #1A1B26
+*.cursorColor:   #A9B1D6
+*.highlightColor:#3A3F4B
+
+!*fading:                  40
+!*fadeColor:               S_base03
+!*pointerColorBackground:  S_base01
+!*pointerColorForeground:  S_base1
+
+! Normal      Bright
+! --------    -------
+! 0 Black      8 Black
+! 1 Red        9 Red
+! 2 Yellow    10 Yellow
+! 3 Green     11 Green
+! 4 Blue      12 Blue
+! 5 Magenta   13 Magenta
+! 6 Cyan      14 Cyan
+! 7 White     15 White
+
+! Black colours
+*.color0:        #1A1B26
+*.color8:        #4E5173
+
+! Red colours
+*.color1:        #F7768E
+*.color9:        #E06C75
+
+! Yellow colours
+*.color2:        #E0AF68
+*.color10:       #D19A66
+
+! Green colours
+*.color3:        #9ECE6A
+*.color11:       #98C379
+
+! Blue colours
+*.color4:        #7AA2F7
+*.color12:       #61AFEF
+
+! Magenta (pink, !green) colours
+*.color5:        #9A7ECC
+*.color13:       #C678DD
+
+! Cyan (blue + green)
+*.color6:        #4ABAAF
+*.color14:       #56B6C2
+
+! White colours
+*.color7:        #ACB0D0
+*.color15:       #ABB2BF
+
