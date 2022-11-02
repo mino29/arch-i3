@@ -1,4 +1,5 @@
 # arch-i3
+
 Dotfiles for my i3wm config.
 These can be annoyingly long and dull, because it's also a reminder of how I
 set them up to myself.
@@ -75,6 +76,7 @@ Good Luck!
 ## clash-for-windows setup
 
 [zhihu reference](https://zhuanlan.zhihu.com/p/396272999)
+[Arch Linux Clash](https://blog.linioi.com/posts/clash-on-arch/)
 
 ## mouse and touchpad config
 
@@ -154,9 +156,19 @@ scratch youtube series.
 
 **vscodium**
 
-Only gui text editor that I use, has similar keybinds to my minimal vim config.
+The only gui text editor that I use, has similar keybinds to my minimal vim config.
 Nothing special.
 
+## Todos
+
+[ ] reduce or eliminate transparency in custom rofi theme
+[ ] setup functional rofi powermenu
+[ ] setup rofi/buku_run with a proper theme
+[ ] modify zsh prompt theme to be more git friendly
+[ ] telegram doesn't work
+[ ] signal doesn't work
+[ ] rofi menu to show current opened webtabs/bookmarks/search/url field (bind
+to super+b)
 
 ## credit
 [r/unixporn]()
