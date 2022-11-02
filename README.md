@@ -34,13 +34,13 @@ around, I might eventually switch to hyprland, the animations are just too good)
 
 ## screenshots
 
-:- will upload asap
+~ will upload asap
 
-**placeholder-1**
+**Sys info**
 
-**placeholder-2**
+**Web Browser**
 
-**placeholder-3**
+**Autotilling**
 
 **placeholder-4**
 
