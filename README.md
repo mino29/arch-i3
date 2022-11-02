@@ -1,11 +1,15 @@
 # arch-i3
-Dotfiles for my i3wm config
+Dotfiles for my i3wm config.
+These can be annoyingly long and dull, because it's also a reminder of how I
+set them up to myself.
+Hope you find theme useful in some way.
 
 ## Programs that I use
 
 OS: Arch Linux
 Machine: 2020 13.3" Razer Blade Stealth
 Terminal: Kitty/Urxvt
+Terminal Prompt: Powerlevel10k
 WM: i3
 Status bar: polybar
 fetch: neofetch/macchina
@@ -28,10 +32,45 @@ enjoying.
 (I've tried awesome and hyprland, but i3 is just too comfortable to tweak
 around, I might eventually switch to hyprland, the animations are just too good)
 
-
 ## screenshots
 
 :- will upload asap
+
+**placeholder-1**
+
+**placeholder-2**
+
+**placeholder-3**
+
+**placeholder-4**
+
+**placeholder-5**
+
+**placeholder-6**
+
+## Installation/setup
+
+I would advise against copy and paste all my config blindly. It's better to
+just pick and choose what you might find to your liking, that's how I built
+mine.
+
+But if you like to try them out and willing to take the time to fix whatever might
+be broken in my config, here's what I do.
+
+1. clone this repo
+```bash
+cd
+git clone https://github.com/mino29/arch-i3.git
+```
+
+2. install all the packages (some maybe unnecessary)
+```bash
+cd ~/arh-i3/programs
+paru -S -< packages.list --noconfirm --needed
+```
+
+3. fix whatever might be broken yourself
+Good Luck!
 
 ## clash-for-windows setup
 
@@ -40,6 +79,13 @@ around, I might eventually switch to hyprland, the animations are just too good)
 ## mouse and touchpad config
 
 [synaptics](https://wiki.archlinux.org/title/Touchpad_Synaptics)
+
+I prefer:
+- reverse/natural scrolling
+- single click to left click
+- double finger click to right click
+- no tapping
+
 
 ## default programs
 
