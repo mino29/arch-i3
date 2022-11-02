@@ -103,12 +103,12 @@ Xft.Antialias: 1
 *.color9:        #E06C75
 
 ! Yellow colours
-*.color2:        #E0AF68
-*.color10:       #D19A66
+*.color2:        #9ECE6A
+*.color10:       #98C379
 
 ! Green colours
-*.color3:        #9ECE6A
-*.color11:       #98C379
+*.color3:        #E0AF68
+*.color11:       #D19A66
 
 ! Blue colours
 *.color4:        #7AA2F7
