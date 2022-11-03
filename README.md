@@ -80,19 +80,18 @@ Good Luck!
 
 ## clash-for-windows setup
 
-[zhihu reference](https://zhuanlan.zhihu.com/p/396272999)
-[Arch Linux Clash](https://blog.linioi.com/posts/clash-on-arch/)
+- [zhihu reference](https://zhuanlan.zhihu.com/p/396272999)
+- [Arch Linux Clash](https://blog.linioi.com/posts/clash-on-arch/)
 
 ## mouse and touchpad config
 
-[synaptics](https://wiki.archlinux.org/title/Touchpad_Synaptics)
+- [synaptics](https://wiki.archlinux.org/title/Touchpad_Synaptics)
 
 I prefer:
 - reverse/natural scrolling
 - single click to left click
 - double finger click to right click
 - no tapping
-
 
 ## default programs
 
