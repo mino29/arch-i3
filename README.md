@@ -35,19 +35,24 @@ around, I might eventually switch to hyprland, the animations are just too good)
 
 ## screenshots
 
-~ will upload asap
-
-**Sys info**
-
-**Web Browser**
 
 **Autotilling**
+> There should be a gif
 
-**placeholder-4**
+**Sys info**
+![Terminal/Sys](./Images/screenshots/terminal.png)
 
-**placeholder-5**
+**Web Browser**
+![Chrome](./Images/screenshots/browser.png)
 
-**placeholder-6**
+**Music**
+![Spotify](./Images/screenshots/music.png)
+
+**Photo processing**
+![gimp](./Images/screenshots/gimp.png)
+
+**Coding**
+![Text Editors](./Images/screenshots/code.png)
 
 ## Installation/setup
 
