@@ -19,10 +19,12 @@ Making a colorscheme takes too much work and I'm too lazy for that.
 
 ## 💽 Programs that I use
 
+- colorscheme: tokyo-night
 - OS: Arch Linux
 - Machine: 2020 13.3" Razer Blade Stealth
-- Terminal: Kitty/Urxvt
+- Terminal: Kitty/xterm
 - Terminal Prompt: robbyrussell
+- login manager: lightdm
 - WM: i3
 - Status bar: polybar
 - fetch: neofetch/macchina
@@ -36,19 +38,18 @@ Making a colorscheme takes too much work and I'm too lazy for that.
 - video player: haruna
 - browser: google-chrome-stable
 - file manager: pcmanfm/nautilus
-- colorscheme: tokyo-night
 
 I like simple and clean setup, so I got rid of fancy wallpaper transparency
 and blur all together so I can focus more on what I'm currently working or
 enjoying.
 
 (I've tried awesome and hyprland, but i3 is just too comfortable to tweak
-around, I might eventually switch to hyprland, the animations are just too good)
+around, I might eventually switch to hyprland though, the animations are just too good)
 
 ## 🖼️ screenshots
 
 **My custom grub theme**
-> Just a tweaked version of dracula grub, [check it out here](https://github.com/mino29/tokyo-night-grub)
+> Just a tweaked version of dracula grub, [check out mine here](https://github.com/mino29/tokyo-night-grub)
 
 ![tokyo-night-grub](https://github.com/mino29/tokyo-night-grub/blob/master/screenshot.png)
 
@@ -91,8 +92,7 @@ cd ~/arh-i3/programs
 paru -S -< packages.list --noconfirm --needed
 ```
 
-3. fix whatever might be broken yourself
-   Good Luck!
+3. fix whatever might be broken yourself, and good Luck!
 
 ## clash-for-windows setup
 
@@ -113,7 +113,7 @@ I prefer:
 ## default programs
 
 - google-chrome-stable -> all things browser does
-- feh -> all image format
+- feh -> all image formats
 - gimp -> .xcf, .psd
 - vim -> .md, .txt
 - zathura -> .pdf
@@ -146,7 +146,7 @@ places where you have to manually set font
 
 - terminal:
     *kitty (`~/.config/kitty/kitty.conf)\
-    *urxvt (`~/.Xresources)\
+    *xterm (`~/.Xresources)\
 - gui widgets: lxappearance
 - status bar: polybar
 - code editor: vscode/ vscodium
@@ -157,7 +157,7 @@ places where you have to manually set font
 
 > **vim**
 
-I forked a "minimal_vim", which is a cross platform, (neo)vim compatible,
+I forked a ["minimal_vim"](https://github.com/mino29/minimal_vim), which is a cross platform, (neo)vim compatible,
 dependency free config that you can bascially use anywhere.
 
 It's simple, speedy and pretty good-looking. (uses gruvbox colorscheme)
