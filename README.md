@@ -50,7 +50,9 @@ around, I might eventually switch to hyprland though, the animations are just to
 ## 🖼️ Screenshots
 
 **My custom lightdm login screen**
+
 > Minimal login screen, I made this.
+
 Non of the actual art work is mine, you can check them out in the credits
 section.
 
