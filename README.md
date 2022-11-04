@@ -38,6 +38,7 @@ Making a colorscheme takes too much work and I'm too lazy for that.
 - Video player: haruna
 - Vrowser: google-chrome-stable
 - File manager: pcmanfm/nautilus
+- File sync/transfer: warpinator/syncthing
 
 I like simple and clean setup, so I got rid of fancy wallpaper transparency
 and blur all together so I can focus more on what I'm currently working or
@@ -47,6 +48,14 @@ enjoying.
 around, I might eventually switch to hyprland though, the animations are just too good)
 
 ## 🖼️ Screenshots
+
+**My custom lightdm login screen**
+> Minimal login screen, I made this
+
+[Check it out here](https://github.com/mino29/ghostly-greeter)
+
+![Overview](https:
+//github.com/mino29/ghostly-greeter/blob/master/screenshots/overview.png)
 
 **My custom grub theme**
 > Just a tweaked version of dracula grub, [check out mine here](https://github.com/mino29/tokyo-night-grub)
