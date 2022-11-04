@@ -168,13 +168,13 @@ Nothing special.
 
 ## ⚠️ Todos
 
-[ ] reduce or eliminate transparency in custom rofi theme
-[ ] setup functional rofi powermenu
-[ ] setup rofi/buku_run with a proper theme
-[ ] modify zsh prompt theme to be more git friendly
-[ ] telegram doesn't work
-[ ] signal doesn't work
-[ ] rofi menu to show current opened webtabs/bookmarks/search/url field (bind
+- [ ] reduce or eliminate transparency in custom rofi theme
+- [ ] setup functional rofi powermenu
+- [ ] setup rofi/buku_run with a proper theme
+- [ ] modify zsh prompt theme to be more git friendly
+- [ ] telegram doesn't work
+- [ ] signal doesn't work
+- [ ] rofi menu to show current opened webtabs/bookmarks/search/url field (bind
 to super+b)
 
 ## 💌 credit
