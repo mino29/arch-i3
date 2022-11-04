@@ -11,7 +11,7 @@ Hope you find them useful in some way.
 - Secondary: Dracula
 - Tertiary: Gruvbox
 
-Use to love Nord, then realise the low contrast is hurting my eyes, switch to
+Used to love Nord, then realise the low contrast is hurting my eyes, switch to
 TokyoNight. Wherever TokyoNight is unavailable I'd use Dracula. If neither are
 available I use Gruvbox.
 
@@ -19,25 +19,25 @@ Making a colorscheme takes too much work and I'm too lazy for that.
 
 ## 💽 Programs that I use
 
-- colorscheme: tokyo-night
+- Colorscheme: tokyo-night
 - OS: Arch Linux
 - Machine: 2020 13.3" Razer Blade Stealth
-- Terminal: Kitty/xterm
+- Terminal: kitty/ xterm
 - Terminal Prompt: robbyrussell
-- login manager: lightdm
-- WM: i3
+- Login manager: lightdm
+- WM: i3-gaps
 - Status bar: polybar
-- fetch: neofetch/macchina
-- launcher: rofi
-- sys monitor: gotop
-- notification: dunst
-- text editor: vim / lunarvim
-- code editor: vs code/vscodium
-- image viewer: feh
-- music player: spotify
-- video player: haruna
-- browser: google-chrome-stable
-- file manager: pcmanfm/nautilus
+- Fetch: neofetch/macchina
+- Launcher: rofi
+- Sys monitor: btop/gotop
+- Notification: dunst
+- Text editor: vim/ lunarvim
+- Code editor: vs code/vscodium
+- Image viewer: feh/ sxiv
+- Music player: spotify
+- Video player: haruna
+- Vrowser: google-chrome-stable
+- File manager: pcmanfm/nautilus
 
 I like simple and clean setup, so I got rid of fancy wallpaper transparency
 and blur all together so I can focus more on what I'm currently working or
@@ -114,7 +114,7 @@ I prefer:
 
 - google-chrome-stable -> all things browser does
 - feh -> all image formats
-- gimp -> .xcf, .psd
+- photogimp -> .xcf, .psd
 - vim -> .md, .txt
 - zathura -> .pdf
 - foliate -> .epub
@@ -158,7 +158,7 @@ places where you have to manually set font
 
 > **vim**
 
-I forked a ["minimal_vim"](https://github.com/mino29/minimal_vim), which is a cross platform, (neo)vim compatible,
+I forked a ["minimal_vim"](https://github.com/mino29/minimal_vim), which is cross platform, (neo)vim compatible,
 dependency free config that you can bascially use anywhere.
 
 It's simple, speedy and pretty good-looking. (uses gruvbox colorscheme)
