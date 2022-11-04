@@ -35,9 +35,10 @@ around, I might eventually switch to hyprland, the animations are just too good)
 
 ## 🖼️ screenshots
 
-**Autotilling**
+**My custom grub theme**
+> Just a tweaked version of dracula grub, [check it out here](https://github.com/mino29/tokyo-night-grub)
 
-> There should be a gif
+![tokyo-night-grub](https://github.com/mino29/tokyo-night-grub/blob/master/screenshot.png)
 
 **Sys info**
 ![Terminal/Sys](./Images/screenshots/terminal.png)
@@ -107,7 +108,7 @@ I prefer:
 ## some processes
 
 **countdown-cli**
-a neat little count down tool
+> a neat little count down tool
 
 ```bash
 export RELEASE="1.0.0"
@@ -126,19 +127,19 @@ usage:
 
 places where you have to set font
 
-terminal:
-*kitty (`~/.config/kitty/kitty.conf)\
- *urxvt (`~/.Xresources)\
-gui widgets: lxappearance
-status bar: polybar
-code editor: vscode/ vscodium
-browser: google-chrome humble-new-tab-page
+- terminal:
+    *kitty (`~/.config/kitty/kitty.conf)\
+    *urxvt (`~/.Xresources)\
+- gui widgets: lxappearance
+- status bar: polybar
+- code editor: vscode/ vscodium
+- browser: google-chrome humble-new-tab-page
 
 ## 🎨 colorscheme
 
-Primary: TokyoNight
-Secondary: Dracula
-Tertiary: Gruvbox
+- Primary: TokyoNight
+- Secondary: Dracula
+- Tertiary: Gruvbox
 
 Use to love Nord, then realise the low contrast is hurting, switch to
 TokyoNight. Wherever TokyoNight is unavailable I use Dracula. If neither are
@@ -148,20 +149,20 @@ Making a colorscheme takes too much work and I'm too lazy for that.
 
 ## 📔 text editor
 
-**vim**
+> **vim**
 
 I forked a "minimal_vim", which is a cross platform, (neo)vim compatible,
 dependency free config that you can bascially use anywhere.
 
 It's simple, speedy and pretty good-looking. (uses gruvbox colorscheme)
 
-**lunarvim**
+> **lunarvim**
 
 It's the most beautiful and functional neovim distribution that I ever used.
 The maintainer Chris streams sometimes, I learned a lot from his neovim from
 scratch youtube series.
 
-**vscodium**
+> **vscodium**
 
 The only gui text editor that I use, has similar keybinds to my minimal vim config.
 Nothing special.
@@ -179,6 +180,6 @@ to super+b)
 
 ## 💌 credit
 
-[r/unixporn](https://reddit.com/r/unixporn)
-[Lunarvim](https://lunarvim.org)
-[minimal vim](https://github.com/nvim-zh/minimal_vim)
+- [r/unixporn](https://reddit.com/r/unixporn)
+- [Lunarvim](https://lunarvim.org)
+- [minimal vim](https://github.com/nvim-zh/minimal_vim)
