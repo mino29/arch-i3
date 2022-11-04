@@ -1,11 +1,11 @@
-# arch-i3
+# 🐧 arch-i3
 
 Dotfiles for my i3wm config.
 These can be annoyingly long and dull, because it's also a reminder of how I
 set them up to myself.
 Hope you find theme useful in some way.
 
-## Programs that I use
+## 💽 Programs that I use
 
 - OS: Arch Linux
 - Machine: 2020 13.3" Razer Blade Stealth
@@ -33,7 +33,7 @@ enjoying.
 (I've tried awesome and hyprland, but i3 is just too comfortable to tweak
 around, I might eventually switch to hyprland, the animations are just too good)
 
-## screenshots
+## 🖼️ screenshots
 
 
 **Autotilling**
@@ -54,7 +54,7 @@ around, I might eventually switch to hyprland, the animations are just too good)
 **Coding**
 ![Text Editors](./Images/screenshots/code.png)
 
-## Installation/setup
+## 🔧 Installation/setup
 
 I would advise against copy and paste all my config blindly. It's better to
 just pick and choose what you might find to your liking, that's how I built
@@ -119,7 +119,7 @@ usage:
     countdown 10m
 ```
 
-## fonts
+## ✍ fonts
 
 places where you have to set font
 
@@ -143,7 +143,7 @@ available I use Gruvbox.
 
 Making a colorscheme takes too much work and I'm too lazy for that.
 
-## text editor
+## 🗒 text editor
 
 **vim**
 
