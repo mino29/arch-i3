@@ -1,11 +1,11 @@
-# 🐧 arch-i3
+# 🐧 Arch-i3
 
 Dotfiles for my i3wm config.
 These can be annoyingly long and dull, because it's also a reminder of how I
 set them up to myself.
 Hope you find theme useful in some way.
 
-## 🎨 colorscheme
+## 🎨 Colorscheme
 
 - Primary: TokyoNight
 - Secondary: Dracula
@@ -46,7 +46,7 @@ enjoying.
 (I've tried awesome and hyprland, but i3 is just too comfortable to tweak
 around, I might eventually switch to hyprland though, the animations are just too good)
 
-## 🖼️ screenshots
+## 🖼️ Screenshots
 
 **My custom grub theme**
 > Just a tweaked version of dracula grub, [check out mine here](https://github.com/mino29/tokyo-night-grub)
@@ -94,12 +94,12 @@ paru -S -< packages.list --noconfirm --needed
 
 3. fix whatever might be broken yourself, and good Luck!
 
-## clash-for-windows setup
+## Clash-for-windows setup
 
 - [zhihu reference](https://zhuanlan.zhihu.com/p/396272999)
 - [Arch Linux Clash](https://blog.linioi.com/posts/clash-on-arch/)
 
-## mouse and touchpad config
+## Mouse and touchpad config
 
 - [synaptics](https://wiki.archlinux.org/title/Touchpad_Synaptics)
 
@@ -110,7 +110,7 @@ I prefer:
 - double finger click to right click
 - no tapping
 
-## default programs
+## Default programs
 
 - google-chrome-stable -> all things browser does
 - feh -> all image formats
@@ -122,7 +122,7 @@ I prefer:
 - haruna -> .mp4, .ts, .mov
 
 
-## some processes
+## Some processes
 
 **countdown-cli**
 > a neat little count down tool
@@ -141,6 +141,7 @@ usage:
 ```
 
 ## ✍ fonts
+> Hack Nerd Font is my favorite, I even use it on my windows gaming rig
 
 places where you have to manually set font
 
@@ -184,7 +185,7 @@ Nothing special.
 - [ ] rofi menu to show current opened webtabs/bookmarks/search/url field (bind
 to super+b)
 
-## 💌 credit
+## 💌 Credits
 
 - [r/unixporn](https://reddit.com/r/unixporn)
 - [Lunarvim](https://lunarvim.org)
