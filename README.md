@@ -3,7 +3,7 @@
 Dotfiles for my i3wm config.
 These can be annoyingly long and dull, because it's also a reminder of how I
 set them up to myself.
-Hope you find theme useful in some way.
+Hope you find them useful in some way.
 
 ## 🎨 Colorscheme
 
