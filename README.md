@@ -5,6 +5,18 @@ These can be annoyingly long and dull, because it's also a reminder of how I
 set them up to myself.
 Hope you find theme useful in some way.
 
+## 🎨 colorscheme
+
+- Primary: TokyoNight
+- Secondary: Dracula
+- Tertiary: Gruvbox
+
+Use to love Nord, then realise the low contrast is hurting my eyes, switch to
+TokyoNight. Wherever TokyoNight is unavailable I'd use Dracula. If neither are
+available I use Gruvbox.
+
+Making a colorscheme takes too much work and I'm too lazy for that.
+
 ## 💽 Programs that I use
 
 - OS: Arch Linux
@@ -62,7 +74,8 @@ just pick and choose what you might find to your liking, that's how I built
 mine.
 
 But if you like to try them out and willing to take the time to fix whatever might
-be broken in my config, here's what I do.
+be broken in my config, here's what I would do.
+
 
 1. clone this repo
 
@@ -99,11 +112,15 @@ I prefer:
 
 ## default programs
 
+- google-chrome-stable -> all things browser does
+- feh -> all image format
+- gimp -> .xcf, .psd
 - vim -> .md, .txt
 - zathura -> .pdf
 - foliate -> .epub
 - ebook viewer -> .mobi
 - haruna -> .mp4, .ts, .mov
+
 
 ## some processes
 
@@ -125,7 +142,7 @@ usage:
 
 ## ✍ fonts
 
-places where you have to set font
+places where you have to manually set font
 
 - terminal:
     *kitty (`~/.config/kitty/kitty.conf)\
@@ -135,17 +152,6 @@ places where you have to set font
 - code editor: vscode/ vscodium
 - browser: google-chrome humble-new-tab-page
 
-## 🎨 colorscheme
-
-- Primary: TokyoNight
-- Secondary: Dracula
-- Tertiary: Gruvbox
-
-Use to love Nord, then realise the low contrast is hurting, switch to
-TokyoNight. Wherever TokyoNight is unavailable I use Dracula. If neither are
-available I use Gruvbox.
-
-Making a colorscheme takes too much work and I'm too lazy for that.
 
 ## 📔 text editor
 
