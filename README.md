@@ -15,7 +15,7 @@ Hope you find theme useful in some way.
 - Status bar: polybar
 - fetch: neofetch/macchina
 - launcher: rofi
-- sys monitor: btop
+- sys monitor: gotop
 - notification: dunst
 - text editor: vim / lunarvim
 - code editor: vs code/vscodium
