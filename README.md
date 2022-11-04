@@ -22,7 +22,7 @@ Making a colorscheme takes too much work and I'm too lazy for that.
 - OS: Arch Linux
 - Machine: 2020 13.3" Razer Blade Stealth
 - Terminal: Kitty/Urxvt
-- Terminal Prompt: Powerlevel10k
+- Terminal Prompt: robbyrussell
 - WM: i3
 - Status bar: polybar
 - fetch: neofetch/macchina
