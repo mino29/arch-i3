@@ -1,8 +1,24 @@
 current_shell = true
 
-theme = "Carbon"
+#theme = "Carbon"
+theme = "Ghost"
 
 
 #show = ["Battery", "Memory"]
 
-show = ["Distribution", "WindowManager", "Terminal", "Shell", "Uptime", "Packages", "Battery"]
+#show = ["Distribution", "WindowManager", "Terminal", "Shell", "Uptime", "Packages", "Battery"]
+
+show = [
+        "Host",
+        "Distribution",
+        "Kernel",
+        "WindowManager", 
+        "Resolution",
+        "Terminal", 
+        "Shell", 
+        "Uptime",
+        "Packages", 
+        "Processor",
+        ]
+
+
