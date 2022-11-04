@@ -54,8 +54,7 @@ around, I might eventually switch to hyprland though, the animations are just to
 
 [Check it out here](https://github.com/mino29/ghostly-greeter)
 
-![Overview](https:
-//github.com/mino29/ghostly-greeter/blob/master/screenshots/overview.png)
+![Overview](https://github.com/mino29/ghostly-greeter/blob/master/screenshots/overview.png)
 
 **My custom grub theme**
 > Just a tweaked version of dracula grub, [check out mine here](https://github.com/mino29/tokyo-night-grub)
