@@ -35,8 +35,8 @@ around, I might eventually switch to hyprland, the animations are just too good)
 
 ## 🖼️ screenshots
 
-
 **Autotilling**
+
 > There should be a gif
 
 **Sys info**
@@ -64,19 +64,21 @@ But if you like to try them out and willing to take the time to fix whatever mig
 be broken in my config, here's what I do.
 
 1. clone this repo
+
 ```bash
 cd
 git clone https://github.com/mino29/arch-i3.git
 ```
 
 2. install all the packages (some maybe unnecessary)
+
 ```bash
 cd ~/arh-i3/programs
 paru -S -< packages.list --noconfirm --needed
 ```
 
 3. fix whatever might be broken yourself
-Good Luck!
+   Good Luck!
 
 ## clash-for-windows setup
 
@@ -88,6 +90,7 @@ Good Luck!
 - [synaptics](https://wiki.archlinux.org/title/Touchpad_Synaptics)
 
 I prefer:
+
 - reverse/natural scrolling
 - single click to left click
 - double finger click to right click
@@ -124,14 +127,14 @@ usage:
 places where you have to set font
 
 terminal:
-    *kitty (`~/.config/kitty/kitty.conf)\
-    *urxvt (`~/.Xresources)\
+*kitty (`~/.config/kitty/kitty.conf)\
+ *urxvt (`~/.Xresources)\
 gui widgets: lxappearance
 status bar: polybar
 code editor: vscode/ vscodium
 browser: google-chrome humble-new-tab-page
 
-## colorscheme
+## 🎨 colorscheme
 
 Primary: TokyoNight
 Secondary: Dracula
@@ -143,7 +146,7 @@ available I use Gruvbox.
 
 Making a colorscheme takes too much work and I'm too lazy for that.
 
-## 🗒 text editor
+## 📔 text editor
 
 **vim**
 
@@ -163,7 +166,7 @@ scratch youtube series.
 The only gui text editor that I use, has similar keybinds to my minimal vim config.
 Nothing special.
 
-## Todos
+## ⚠️ Todos
 
 [ ] reduce or eliminate transparency in custom rofi theme
 [ ] setup functional rofi powermenu
@@ -174,7 +177,8 @@ Nothing special.
 [ ] rofi menu to show current opened webtabs/bookmarks/search/url field (bind
 to super+b)
 
-## credit
-[r/unixporn]()
-[Lunarvim]()
-[minimal vim]()
+## 💌 credit
+
+[r/unixporn](https://reddit.com/r/unixporn)
+[Lunarvim](https://lunarvim.org)
+[minimal vim](https://github.com/nvim-zh/minimal_vim)
