@@ -154,8 +154,8 @@ usage:
 places where you have to manually set font
 
 - terminal:
-    *kitty (`~/.config/kitty/kitty.conf)\
-    *xterm (`~/.Xresources)\
+     - *kitty (`~/.config/kitty/kitty.conf)\
+     - *xterm (`~/.Xresources)\
 - gui widgets: lxappearance
 - status bar: polybar
 - code editor: vscode/ vscodium
