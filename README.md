@@ -124,6 +124,45 @@ I prefer:
 
 ## Some processes
 
+**autotiling**
+
+[i3 autotiling] (https://github.com/nwg-piotr/autotiling)
+
+### Usage
+
+In your i3 config `~/.config/i3/config`
+
+add this line
+
+```
+exec_always --no-startup-id autotiling -l 2
+```
+
+the `-l 2` flag is to emulate dwm's master stack layout which I quite like,
+it's optional.
+
+```bash
+swallow firefox
+swallow spotify
+```
+
+**swallow**
+[i3-swallow](https://github.com/jamesofarrell/i3-swallow)
+
+### Install
+
+`pip install --user i3-swallow -U`
+
+### Usage
+
+Prefix whatever program you want to run with `swallow`
+
+```bash
+swallow firefox
+swallow spotify
+```
+
+
 **countdown-cli**
 > a neat little count down tool
 
@@ -139,6 +178,8 @@ usage:
     countdown 5s
     countdown 10m
 ```
+
+
 
 ## ✍ fonts
 > Hack Nerd Font is my favorite, I even use it on my windows gaming rig
