@@ -7,18 +7,18 @@ These can be annoyingly long and dull, because it's also a reminder of how I
 set them up to myself.
 Hope you find them useful in some way.
 
-# Table of contents
+# 📖 Table of contents
 
-- [Title](#🐧Arch-i3)
-- [Table of contents](#table-of-contents)
+- [Title](#🐧arch-i3)
+- [Table of contents](#📖table-of-contents)
 - [Screenshots](##🖼️screenshots)
-- [Colorscheme](##colorschemes)
+- [Colorscheme](##🎨colorschemes)
 - [Programs](##programs-that-i-use)
 - [Installation/setup](##installation)
 - [Input device tweak](##mouse-and-touchpad-config)
 - [Some detaild processes](##some-processes)
 - [Fonts](##fonts)
-- [Text editors](## ext-editors)
+- [Text editors](##text-editors)
 - [Polybar](##polybar)
 - [clash for windows](##clash-for-windows-setup)
 - [Todos](##todos)
@@ -222,7 +222,7 @@ places where you have to manually set font
 - browser: google-chrome humble-new-tab-page
 
 
-## 📔 text editor
+## 📔 Text editors
 
 > **vim**
 
