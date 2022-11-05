@@ -9,20 +9,20 @@ Hope you find them useful in some way.
 
 # Table of contents
 
-- [Title](# 🐧 Arch-i3)
-- [Table of contents](# table-of-contents)
-- [Screenshots](## 🖼️ Screenshots)
-- [Colorscheme](## Colorschemes)
-- [Programs](## Programs that I use)
-- [Installation/setup](## Installation/setup)
-- [Input device tweak](## Mouse and touchpad config)
-- [Some detaild processes](## Some processes)
-- [Fonts](## fonts)
-- [Text editors](## text-editors)
-- [Polybar](## Polybar)
-- [clash for windows](## clash-for-windows setup)
-- [Todos](## clash-for-windows setup)
-- [Credits](## Credits)
+- [Title](#🐧Arch-i3)
+- [Table of contents](#table-of-contents)
+- [Screenshots](##🖼️screenshots)
+- [Colorscheme](##colorschemes)
+- [Programs](##programs-that-i-use)
+- [Installation/setup](##installation)
+- [Input device tweak](##mouse-and-touchpad-config)
+- [Some detaild processes](##some-processes)
+- [Fonts](##fonts)
+- [Text editors](## ext-editors)
+- [Polybar](##polybar)
+- [clash for windows](##clash-for-windows-setup)
+- [Todos](##todos)
+- [Credits](##credits)
 
 
 ## 🖼️ Screenshots
