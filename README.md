@@ -27,6 +27,7 @@ Hope you find them useful in some way.
 
 ## 🖼️ Screenshots
 
+
 **My custom lightdm login screen**
 
 > Minimal login screen, I made this.
@@ -44,11 +45,9 @@ section.
 
 ![tokyo-night-grub](https://github.com/mino29/tokyo-night-grub/blob/master/screenshot.png)
 
-**Sys info**
-![Terminal/Sys](./Images/screenshots/terminal.png)
-
-**Web Browser**
-![Chrome](./Images/screenshots/browser.png)
+System info|Web Browser
+|--|--|
+![img](./Images/screenshots/terminal.png)|![Chrome](./Images/screenshots/browser.png)
 
 **Music**
 ![Spotify](./Images/screenshots/music.png)
