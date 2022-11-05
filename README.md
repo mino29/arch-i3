@@ -47,8 +47,7 @@ System info|Web Browser
 
 Music|Coding
 |--|--|
-![img](./Images/screenshots/music.png)
-![img](./Images/screenshots/code.png)
+![img](./Images/screenshots/music.png)|![img](./Images/screenshots/code.png)
 
 **Photo processing**
 ![img](./Images/screenshots/gimp.png)
