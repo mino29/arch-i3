@@ -12,7 +12,7 @@ Hope you find them useful in some way.
 - [Title](#arch-i3)
 - [Table of contents](#table-of-contents)
 - [Screenshots](##screenshots)
-- [Colorscheme](##colorschemes)
+- [Colorschemes](##colorschemes)
 - [Programs](##programs-that-i-use)
 - [Installation/setup](##installation)
 - [Input device tweak](##mouse-and-touchpad-config)
@@ -202,7 +202,7 @@ usage:
 
 
 
-## ✍ fonts
+## fonts
 > Hack Nerd Font is my favorite, I even use it on my windows gaming rig
 
 places where you have to manually set font
@@ -291,7 +291,12 @@ spicetify backup apply
 spicetify config current_theme Glaze
 spicetify config color_scheme Dark
 ```
+Finally
 
+```bash
+spicetify apply
+```
+Voila!
 > It fits my setup pretty good (could be darker, but good enough)
 
 Glaze Dark (spicetify)
