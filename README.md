@@ -119,19 +119,6 @@ I prefer:
 - double finger click to right click
 - no tapping
 
-## Default programs
-
-- google-chrome-stable -> all things browser does
-- feh -> all image formats
-- photogimp -> .xcf, .psd
-- vim -> .md, .txt
-- zathura -> .pdf
-- foliate -> .epub, .mobi
-- ebook managerment -> calibre
-- haruna -> .mp4, .ts, .mov
-- input method -> fcitx5
-
-
 ## Some processes
 
 **countdown-cli**
@@ -197,11 +184,9 @@ You might not like this top-bezel looking setup, but my latop has a pretty
 signifiant bottom bezel, so this setup on my machine is pretty balanced
 visually as a whole.
 
-Here are my end golas for this polybar setup:
+Here are my end goals for this polybar setup:
 
 - Minimalistic
-- Functional
-- Practical
 - Productivity and efficiency focused
 
 I've these rules for myself:
@@ -210,13 +195,12 @@ I've these rules for myself:
   color)
 - Every module should be clickable
 - Modules should be properly spaced out without an ugly underline or a square
-- Just the essential stats, I don't want to know how many ram or cpu core or
+- Just the essential stats, I don't want to know how many ram or cpu cores or
   storage I'm using.
 - Just show the important part of the window title, never the full long one,
   it' will only clutter the status bar.
 
-
-## Clash-for-windows setup
+## 🧭 Clash-for-windows setup
 
 - [zhihu reference](https://zhuanlan.zhihu.com/p/396272999)
 - [Arch Linux Clash](https://blog.linioi.com/posts/clash-on-arch/)
@@ -224,6 +208,8 @@ I've these rules for myself:
 ## ⚠️ Todos
 
 - [ ] reduce or eliminate transparency in custom rofi theme
+- [ ] volumne changing is bit laggy
+- [ ] laptop don't got go sleep when lid closed
 - [ ] setup functional rofi powermenu
 - [ ] setup rofi/buku_run with a proper theme
 - [ ] modify zsh prompt theme to be more git friendly
