@@ -27,36 +27,31 @@ Hope you find them useful in some way.
 
 ## 🖼️ Screenshots
 
+**My custom grub theme**
+> Just a tweaked version of dracula grub, [check out mine here](https://github.com/mino29/tokyo-night-grub)
 
 **My custom lightdm login screen**
-
 > Minimal login screen, I made this.
-
 [Check it out here](https://github.com/mino29/ghostly-greeter)
 
 None of the actual art work is mine, you can check them out in the credits
 section.
 
-
-![Overview](https://github.com/mino29/ghostly-greeter/blob/master/screenshots/overview.png)
-
-**My custom grub theme**
-> Just a tweaked version of dracula grub, [check out mine here](https://github.com/mino29/tokyo-night-grub)
-
-![tokyo-night-grub](https://github.com/mino29/tokyo-night-grub/blob/master/screenshot.png)
+Custom Grub theme| Custom lightdm theme
+|--|--|
+![img](https://github.com/mino29/tokyo-night-grub/blob/master/screenshot.png)|![img](https://github.com/mino29/ghostly-greeter/blob/master/screenshots/overview.png)
 
 System info|Web Browser
 |--|--|
 ![img](./Images/screenshots/terminal.png)|![Chrome](./Images/screenshots/browser.png)
 
-**Music**
-![Spotify](./Images/screenshots/music.png)
+Music|Coding
+|--|--|
+![img](./Images/screenshots/music.png)
+![img](./Images/screenshots/code.png)
 
 **Photo processing**
-![gimp](./Images/screenshots/gimp.png)
-
-**Coding**
-![Text Editors](./Images/screenshots/code.png)
+![img](./Images/screenshots/gimp.png)
 
 ## 🎨 Colorschemes
 
