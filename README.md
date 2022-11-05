@@ -158,10 +158,21 @@ swallow spotify
 Prefix whatever program you want to run with `swallow`
 
 ```bash
-swallow firefox
 swallow spotify
 ```
 
+In my use I found it's best to not combine it with i3's assigning window to workspace
+or autotiling. Apparently it's not 100% working with every other program window
+either.
+
+I just use it opening image viewer such as feh.
+
+I have `alias feh=swallow feh . -.` in my .zshrc
+
+Which just means hide current terminal window temporarily and open all images
+files in the current directory with image size all fit window.
+
+Terrible description, but really useful alias.
 
 **countdown-cli**
 > a neat little count down tool
