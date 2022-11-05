@@ -1,12 +1,63 @@
 # 🐧 Arch-i3
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)![Vim](https://img.shields.io/badge/VIM-%2311AB00.svg?style=for-the-badge&logo=vim&logoColor=white)![Gimp Gnu Image Manipulation Program](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF)
 
 Dotfiles for my i3wm config.
 These can be annoyingly long and dull, because it's also a reminder of how I
 set them up to myself.
 Hope you find them useful in some way.
 
+# Table of contents
+
+- [Title](# 🐧 Arch-i3)
+- [Table of contents](# table-of-contents)
+- [Screenshots](## 🖼️ Screenshots)
+- [Colorscheme](## Colorschemes)
+- [Programs](## Programs that I use)
+- [Installation/setup](## Installation/setup)
+- [Input device tweak](## Mouse and touchpad config)
+- [Some detaild processes](## Some processes)
+- [Fonts](## fonts)
+- [Text editors](## text-editors)
+- [Polybar](## Polybar)
+- [clash for windows](## clash-for-windows setup)
+- [Todos](## clash-for-windows setup)
+- [Credits](## Credits)
+
+
+## 🖼️ Screenshots
+
+**My custom lightdm login screen**
+
+> Minimal login screen, I made this.
+
+[Check it out here](https://github.com/mino29/ghostly-greeter)
+
+None of the actual art work is mine, you can check them out in the credits
+section.
+
+
+![Overview](https://github.com/mino29/ghostly-greeter/blob/master/screenshots/overview.png)
+
+**My custom grub theme**
+> Just a tweaked version of dracula grub, [check out mine here](https://github.com/mino29/tokyo-night-grub)
+
+![tokyo-night-grub](https://github.com/mino29/tokyo-night-grub/blob/master/screenshot.png)
+
+**Sys info**
+![Terminal/Sys](./Images/screenshots/terminal.png)
+
+**Web Browser**
+![Chrome](./Images/screenshots/browser.png)
+
+**Music**
+![Spotify](./Images/screenshots/music.png)
+
+**Photo processing**
+![gimp](./Images/screenshots/gimp.png)
+
+**Coding**
+![Text Editors](./Images/screenshots/code.png)
 
 ## 🎨 Colorschemes
 
@@ -49,41 +100,6 @@ enjoying.
 
 (I've tried dwm, awesome and hyprland, but i3 is just too comfortable to tweak
 around, I might eventually switch to hyprland though, the animations are just too good)
-
-
-## 🖼️ Screenshots
-
-**My custom lightdm login screen**
-
-> Minimal login screen, I made this.
-
-[Check it out here](https://github.com/mino29/ghostly-greeter)
-
-None of the actual art work is mine, you can check them out in the credits
-section.
-
-
-![Overview](https://github.com/mino29/ghostly-greeter/blob/master/screenshots/overview.png)
-
-**My custom grub theme**
-> Just a tweaked version of dracula grub, [check out mine here](https://github.com/mino29/tokyo-night-grub)
-
-![tokyo-night-grub](https://github.com/mino29/tokyo-night-grub/blob/master/screenshot.png)
-
-**Sys info**
-![Terminal/Sys](./Images/screenshots/terminal.png)
-
-**Web Browser**
-![Chrome](./Images/screenshots/browser.png)
-
-**Music**
-![Spotify](./Images/screenshots/music.png)
-
-**Photo processing**
-![gimp](./Images/screenshots/gimp.png)
-
-**Coding**
-![Text Editors](./Images/screenshots/code.png)
 
 ## 🔧 Installation/setup
 
