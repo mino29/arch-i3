@@ -9,10 +9,10 @@ Hope you find them useful in some way.
 
 # 📖 Table of contents
 
-- [Title](#🐧arch-i3)
-- [Table of contents](#📖table-of-contents)
-- [Screenshots](##🖼️screenshots)
-- [Colorscheme](##🎨colorschemes)
+- [Title](#arch-i3)
+- [Table of contents](#table-of-contents)
+- [Screenshots](##screenshots)
+- [Colorscheme](##colorschemes)
 - [Programs](##programs-that-i-use)
 - [Installation/setup](##installation)
 - [Input device tweak](##mouse-and-touchpad-config)
