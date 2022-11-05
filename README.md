@@ -5,7 +5,7 @@ These can be annoyingly long and dull, because it's also a reminder of how I
 set them up to myself.
 Hope you find them useful in some way.
 
-## 🎨 Colorscheme
+## 🎨 Colorschemes
 
 - Primary: TokyoNight
 - Secondary: Dracula
@@ -19,7 +19,7 @@ Making a colorscheme takes too much work and I'm too lazy for that.
 
 ## 💽 Programs that I use
 
-- Colorscheme: tokyo-night
+- Colorscheme: TokyoNight
 - OS: Arch Linux
 - Machine: 2020 13.3" Razer Blade Stealth
 - Terminal: kitty/ xterm
@@ -32,7 +32,7 @@ Making a colorscheme takes too much work and I'm too lazy for that.
 - Sys monitor: btop/gotop
 - Notification: dunst
 - Text editor: vim/ lunarvim
-- Code editor: vs code/vscodium
+- Code editor: vs code/ vscodium
 - Image viewer: feh/ sxiv
 - Music player: spotify
 - Video player: haruna
@@ -41,11 +41,12 @@ Making a colorscheme takes too much work and I'm too lazy for that.
 - File sync/transfer: warpinator/syncthing
 
 I like simple and clean setup, so I got rid of fancy wallpaper transparency
-and blur all together so I can focus more on what I'm currently working or
+and blur all together so I can focus more on what I'm currently working on or
 enjoying.
 
-(I've tried awesome and hyprland, but i3 is just too comfortable to tweak
+(I've tried dwm, awesome and hyprland, but i3 is just too comfortable to tweak
 around, I might eventually switch to hyprland though, the animations are just too good)
+
 
 ## 🖼️ Screenshots
 
@@ -53,10 +54,11 @@ around, I might eventually switch to hyprland though, the animations are just to
 
 > Minimal login screen, I made this.
 
+[Check it out here](https://github.com/mino29/ghostly-greeter)
+
 Non of the actual art work is mine, you can check them out in the credits
 section.
 
-[Check it out here](https://github.com/mino29/ghostly-greeter)
 
 ![Overview](https://github.com/mino29/ghostly-greeter/blob/master/screenshots/overview.png)
 
@@ -82,13 +84,12 @@ section.
 
 ## 🔧 Installation/setup
 
-I would advise against copy and paste all my config blindly. It's better to
+I would advise against copying and pasting all my config blindly. It's better to
 just pick and choose what you might find to your liking, that's how I built
 mine.
 
 But if you like to try them out and willing to take the time to fix whatever might
 be broken in my config, here's what I would do.
-
 
 1. clone this repo
 
@@ -106,10 +107,6 @@ paru -S -< packages.list --noconfirm --needed
 
 3. fix whatever might be broken yourself, and good Luck!
 
-## Clash-for-windows setup
-
-- [zhihu reference](https://zhuanlan.zhihu.com/p/396272999)
-- [Arch Linux Clash](https://blog.linioi.com/posts/clash-on-arch/)
 
 ## Mouse and touchpad config
 
@@ -129,9 +126,10 @@ I prefer:
 - photogimp -> .xcf, .psd
 - vim -> .md, .txt
 - zathura -> .pdf
-- foliate -> .epub
-- ebook viewer -> .mobi
+- foliate -> .epub, .mobi
+- ebook managerment -> calibre
 - haruna -> .mp4, .ts, .mov
+- input method -> fcitx5
 
 
 ## Some processes
@@ -185,6 +183,43 @@ scratch youtube series.
 
 The only gui text editor that I use, has similar keybinds to my minimal vim config.
 Nothing special.
+
+## 💈Polybar
+
+> This section might be extremely long, I had most fun tinkering polybar while
+> ricing.
+
+It might seem that I made this bar super huge when in reality it's just a
+floating one, it has space on 4 size, then I made it has the same background
+color as the wallpaper, so it has this borderless look.
+
+You might not like this top-bezel looking setup, but my latop has a pretty
+signifiant bottom bezel, so this setup on my machine is pretty balanced
+visually as a whole.
+
+Here are my end golas for this polybar setup:
+
+- Minimalistic
+- Functional
+- Practical
+- Productivity and efficiency focused
+
+I've these rules for myself:
+
+- No more than 4 colors (unimportant, important, alert and system tray icon
+  color)
+- Every module should be clickable
+- Modules should be properly spaced out without an ugly underline or a square
+- Just the essential stats, I don't want to know how many ram or cpu core or
+  storage I'm using.
+- Just show the important part of the window title, never the full long one,
+  it' will only clutter the status bar.
+
+
+## Clash-for-windows setup
+
+- [zhihu reference](https://zhuanlan.zhihu.com/p/396272999)
+- [Arch Linux Clash](https://blog.linioi.com/posts/clash-on-arch/)
 
 ## ⚠️ Todos
 
