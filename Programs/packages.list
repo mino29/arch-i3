@@ -1,3 +1,5 @@
+accountsservice
+acpi
 adobe-source-han-sans-cn-fonts
 adobe-source-han-serif-cn-fonts
 adriconf
@@ -32,7 +34,6 @@ brightnessctl
 btop
 btrfs-progs
 buku
-buku_run-git
 bukubrow-bin
 calibre
 catdoc
@@ -47,7 +48,6 @@ chili-sddm-theme
 chromedriver
 clash
 clash-for-windows-electron-bin
-clash-verge
 cloc
 cmus
 code-minimap-git
@@ -130,6 +130,7 @@ gnumeric
 go
 goldendict-git
 google-chrome
+gotop-bin
 gparted
 gpick
 gping
@@ -169,6 +170,10 @@ lftp
 libinput-gestures
 libreoffice-fresh
 light
+lightdm
+lightdm-gtk-greeter
+lightdm-settings
+lightdm-slick-greeter
 linux
 linux-firmware
 lrzsz
@@ -194,6 +199,7 @@ miniconda
 mkinitcpio
 mkinitcpio-firmware
 motrix
+mpc
 mpd
 mtools
 multitail
@@ -211,6 +217,7 @@ network-manager-applet
 networkmanager
 newsboat
 nilfs-utils
+nitrogen
 nmon
 nodejs
 noto-fonts
@@ -256,6 +263,7 @@ pkgconf
 playerctl
 polybar
 polybar-spotify-module
+powertop
 ppp
 prettier
 proton
@@ -272,11 +280,12 @@ reflector
 ripgrep
 rmlint
 rofi
+rofi-buku-git
+rofi-calc
 rofi-emoji
 rsync
 ruby
 rustup
-rxvt-unicode-truecolor
 scrcpy
 screenkey
 sddm
@@ -298,8 +307,9 @@ sof-tools
 solidity
 speech-dispatcher
 speedtest-cli
+spicetify-cli
+spicetify-themes-git
 spotify
-st
 starship
 steam
 stow
@@ -348,10 +358,8 @@ ueberzug
 uefitool
 unrar
 unzip
-urxvt-clipboard
-urxvt-resize-font-git
-urxvt-vtwheel
 usbmuxd
+utools
 ventoy-bin
 vi
 vim-fcitx
@@ -461,5 +469,6 @@ zathura-ps
 zeal
 zoom
 zoxide
+zscroll-git
 zsh
 zsh-completions-git
