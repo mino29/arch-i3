@@ -1,4 +1,4 @@
-# 🐧 Arch-i3
+# Arch-i3
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)![Vim](https://img.shields.io/badge/VIM-%2311AB00.svg?style=for-the-badge&logo=vim&logoColor=white)![Gimp Gnu Image Manipulation Program](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF)
 
@@ -7,7 +7,7 @@ These can be annoyingly long and dull, because it's also a reminder of how I
 set them up to myself.
 Hope you find them useful in some way.
 
-# 📖 Table of contents
+# Table of contents
 
 - [Title](#arch-i3)
 - [Table of contents](#table-of-contents)
@@ -20,12 +20,13 @@ Hope you find them useful in some way.
 - [Fonts](##fonts)
 - [Text editors](##text-editors)
 - [Polybar](##polybar)
+- [Spotify](##spotify)
 - [clash for windows](##clash-for-windows-setup)
 - [Todos](##todos)
 - [Credits](##credits)
 
 
-## 🖼️ Screenshots
+## Screenshots
 
 **My custom grub theme**
 > Just a tweaked version of dracula grub, [check out mine here](https://github.com/mino29/tokyo-night-grub)
@@ -52,7 +53,7 @@ Music|Coding
 **Photo processing**
 ![img](./Images/screenshots/gimp.png)
 
-## 🎨 Colorschemes
+## Colorschemes
 
 - Primary: TokyoNight
 - Secondary: Dracula
@@ -64,7 +65,7 @@ available I use Gruvbox.
 
 Making a colorscheme takes too much work and I'm too lazy for that.
 
-## 💽 Programs that I use
+## Programs that I use
 
 - Colorscheme: TokyoNight
 - OS: Arch Linux
@@ -94,7 +95,7 @@ enjoying.
 (I've tried dwm, awesome and hyprland, but i3 is just too comfortable to tweak
 around, I might eventually switch to hyprland though, the animations are just too good)
 
-## 🔧 Installation/setup
+## Installation/setup
 
 I would advise against copying and pasting all my config blindly. It's better to
 just pick and choose what you might find to your liking, that's how I built
@@ -215,7 +216,7 @@ places where you have to manually set font
 - browser: google-chrome humble-new-tab-page
 
 
-## 📔 Text editors
+## Text editors
 
 > **vim**
 
@@ -235,7 +236,7 @@ scratch youtube series.
 The only gui text editor that I use, has similar keybinds to my minimal vim config.
 Nothing special.
 
-## 💈Polybar
+## Polybar
 
 > This section might be extremely long, I had most fun tinkering polybar while
 > ricing.
@@ -264,12 +265,47 @@ I've these rules for myself:
 - Just show the important part of the window title, never the full long one,
   it' will only clutter the status bar.
 
-## 🧭 Clash-for-windows setup
+## Spotify
+
+Just download spicetify and do a simple theme swap, met some problems but [the
+official documentation](https://spicetify.app/docs/advanced-usage/installation#note-for-linux-users) was really helpful.
+
+Here are the commands that I run:
+
+```bash
+paru -S spicetify-cli spicetify-themes-git --noconfirm
+```
+
+Follow the official doc, I did:
+
+```bash
+sudo chmod a+wr /opt/spotify\
+sudo chmod a+wr /opt/spotify/Apps -R
+```
+
+Then I did:
+
+```bash
+spicetify config
+spicetify backup apply
+spicetify config current_theme Glaze
+spicetify config color_scheme Dark
+```
+
+> It fits my setup pretty good (could be darker, but good enough)
+
+Glaze Dark (spicetify)
+|--|
+![img](./Images/screenshots/spicetify.png)
+
+
+## Clash-for-windows setup
 
 - [zhihu reference](https://zhuanlan.zhihu.com/p/396272999)
 - [Arch Linux Clash](https://blog.linioi.com/posts/clash-on-arch/)
 
-## ⚠️ Todos
+
+## Todos
 
 - [ ] reduce or eliminate transparency in custom rofi theme
 - [ ] volumne changing is bit laggy
@@ -282,7 +318,7 @@ I've these rules for myself:
 - [ ] rofi menu to show current opened webtabs/bookmarks/search/url field (bind
 to super+b)
 
-## 💌 Credits
+## Credits
 
 - [r/unixporn](https://reddit.com/r/unixporn)
 - [Lunarvim](https://lunarvim.org)
