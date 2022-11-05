@@ -91,7 +91,7 @@ I would advise against copying and pasting all my config blindly. It's better to
 just pick and choose what you might find to your liking, that's how I built
 mine.
 
-But if you like to try them out and willing to take the time to fix whatever might
+But if you like to try them out and are willing to take the time to fix whatever might
 be broken in my config, here's what I would do.
 
 1. clone this repo
@@ -165,7 +165,7 @@ In my use I found it's best to not combine it with i3's assigning window to work
 or autotiling. Apparently it's not 100% working with every other program window
 either.
 
-I just use it opening image viewer such as feh.
+I just use it to open image viewer such as feh.
 
 I have `alias feh=swallow feh . -.` in my .zshrc
 
