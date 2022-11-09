@@ -242,7 +242,7 @@ Nothing special.
 > ricing.
 
 It might seem that I made this bar super huge when in reality it's just a
-floating one, it has space on 4 size, then I made it has the same background
+floating one, it has space on 4 sides, then I made it has the same background
 color as the wallpaper, so it has this borderless look.
 
 You might not like this top-bezel looking setup, but my latop has a pretty
@@ -314,6 +314,8 @@ Glaze Dark (spicetify)
 
 - [ ] reduce or eliminate transparency in custom rofi theme
 - [ ] volumne changing is bit laggy
+- [ ] reduce the footprint of clash/clash-verge/clash-for-windows
+- [ ] configure all color in one place for easy configurability
 - [ ] laptop don't got go sleep when lid closed
 - [ ] setup functional rofi powermenu
 - [ ] setup rofi/buku_run with a proper theme
