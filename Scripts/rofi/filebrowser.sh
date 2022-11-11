@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SUBDIR_STATUS="$HOME/scripts/rofi/filebrowser-subdir.txt"
+SUBDIR_STATUS="$HOME/Scripts/rofi/filebrowser-subdir.txt"
 SUBDIR=""
 
 get_subdir() {
@@ -15,9 +15,9 @@ function get_files() {
 
     for i in $(ls "$1/$SUBDIR" | grep -v 'thumbs' | shuf); do
         name="${i%.*}"
-        
+
         if [ -d "$1/$SUBDIR/$i" ]; then
-            echo -en "${i%%|*}\0icon\x1ffolder-music\n"    
+            echo -en "${i%%|*}\0icon\x1ffolder-music\n"
         elif [ -f "${1}/thumbs/${name}.png" ]; then
             echo -en "${i%%|*}\0icon\x1f${1}/thumbs/${name}.png\n"
         else
@@ -39,16 +39,16 @@ elif [ "$#" -gt 1 ]; then
         if [[ "$2" == *":"* ]]; then
             shufArg="$(echo "$2" | cut -d ":" -f2)"
         fi
-        
+
         #mpv --shuffle "$1/$SUBDIR" > /dev/null &
-        $HOME/scripts/music/mpv-controller.sh start shuffle "$1/$shufArg" &
+        $HOME/Scripts/music/mpv-controller.sh start shuffle "$1/$shufArg" &
         echo "" > $SUBDIR_STATUS
     elif [[ "$2" == "Back" ]]; then
         SUBDIR="$(echo "$SUBDIR" | rev | cut -d '/' -f 2- | rev)"
         echo "$SUBDIR" > $SUBDIR_STATUS
-    
+
         echo -en "Shuffle:$SUBDIR\0icon\x1fmedia-playlist-shuffle\n"
-        
+
         if [ "$SUBDIR" != "" ]; then
             echo -en "Back\0icon\x1farrow-left\n"
         fi
@@ -63,7 +63,7 @@ elif [ "$#" -gt 1 ]; then
         get_files "$1"
     else
         file="$(find "$1/$SUBDIR" -name "$(printf '%q\n' "$2")*" -not -path "$1/thumbs/*")"
-        $HOME/scripts/music/mpv-controller.sh start "$file" &
+        $HOME/Scripts/music/mpv-controller.sh start "$file" &
         echo "" > $SUBDIR_STATUS
     fi
 fi

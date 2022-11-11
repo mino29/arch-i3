@@ -309,6 +309,17 @@ Glaze Dark (spicetify)
 - [zhihu reference](https://zhuanlan.zhihu.com/p/396272999)
 - [Arch Linux Clash](https://blog.linioi.com/posts/clash-on-arch/)
 
+## Virtual Box setup
+
+First run of virtual box, it'll prompt "Fail to access the USB subsystem..."
+
+run the following command should solve it
+
+```bash
+sudo usermod -aG vboxusers $USER
+```
+
+then reboot to take effect
 
 ## Todos
 

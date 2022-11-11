@@ -1,1 +1,1 @@
-paru -Syyu --noconfirm
+kitty --hold -e paru -Syyu --noconfirm

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ctl=/usr/bin/pulseaudio-ctl
+#ctl=/usr/bin/pulseaudio-control
 #ctl=/usr/bin/pactl
 lockfile=~/Scripts/misc/volume-lockfile
 iconDir="$HOME/.icons/tmp"
